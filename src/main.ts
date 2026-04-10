@@ -26,7 +26,7 @@ async function bootstrap() {
     swaggerOptions: {
       withCredentials: true,
     },
-  };
+  }; 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api-docs', app, document, customOptions);
   app.getHttpAdapter().getInstance().set('trust proxy', true);
